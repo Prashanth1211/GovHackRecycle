@@ -51,13 +51,16 @@ class OptionsFragment : Fragment() {
     }
 
     fun getData(image_url: String) {
-//        val rsp = listOf(
-//            Option("https://m.media-amazon.com/images/M/MV5BMTk0Njk2OTY2N15BMl5BanBnXkFtZTcwNTAxNjAzMQ@@._V1_.jpg","Stainless Steel Specialty | Dulux","https://www.dulux.com.au/colours/details/Specialty_000001")
-//        )
+        val rsp = listOf(
+            Option("https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/BIOBCK8GS_biopak_single_wall_coffee_cups_8oz_kraft_1000_box.jpg","Bioback Single Wall Coffee Cups","https://www.dulux.com.au/colours/details/Specialty_000001"),
+            Option("https://marketplacer.imgix.net/TT/I9CKdd4trLQxRF-93LZs5oi3c.jpg?auto=format&fm=pjpg&fit=clip&w=635&h=508&s=464bec02a301d0eb9982c28ddc2eedf9","Ripple Wall Coffee Cups","https://www.dulux.com.au/colours/details/Specialty_000001"),
+            Option("https://au.shop.allpressespresso.com/cdn/shop/products/ReusableCup_large.png?v=1578631777","Allpress Reuseable Coffee Cup","https://www.dulux.com.au/colours/details/Specialty_000001"),
+            Option("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryCew3FaemHNh6lzqBbK2jc6brZR9YzLAeQ&usqp=CAU","Black Paper Coffee Cups","https://www.dulux.com.au/colours/details/Specialty_000001"),
+        )
 
 
         // Display the first 500 characters of the response string.
-        //fillRecyclerView(rsp)
+        fillRecyclerView(rsp)
 
         val imgUrl = URLEncoder.encode(image_url, "utf-8")
         val queue = Volley.newRequestQueue(requireContext())

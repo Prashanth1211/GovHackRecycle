@@ -37,8 +37,8 @@ class ReportFragment : Fragment() {
 
     fun fillInData(response: Response) {
         binding.consUploading.visibility = View.GONE
-        binding.txtCarbonScore.text = response.cf_wf[0].replace("Response 2: ", "")
-        binding.txtWaterScore.text = response.cf_wf[1].replace("Response 2: ", "")
+        binding.txtCarbonScore.text = response.cf_wf[0].replace("Answer 2: ", "")
+        binding.txtWaterScore.text = response.cf_wf[1].replace("Answer 2: ", "")
         binding.txtDisposalGuide.text = response.disposal
     }
 

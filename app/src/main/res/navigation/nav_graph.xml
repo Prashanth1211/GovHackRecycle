@@ -52,7 +52,7 @@
     <fragment
         android:id="@+id/reportFragment"
         android:name="in.co.androidapp.ecozoom.ReportFragment"
-        android:label="fragment_report"
+        android:label="EcoZoom"
         tools:layout="@layout/fragment_report" >
         <argument
             android:name="query"
